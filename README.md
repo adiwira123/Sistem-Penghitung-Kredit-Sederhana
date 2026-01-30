@@ -20,12 +20,14 @@ Perhitungan bunga dan angsuran mengikuti alur **flowchart kredit mobil**.
 
 ## Cara Menjalankan
 1. Download atau clone repository ini
-2. Buka file `kredit-mobil.html`
+2. Buka file `index.html`
 3. Jalankan langsung di browser
 
 ## Teknologi
 - HTML
+- CSS
 - JavaScript
 
 ## Catatan
 Program ini tidak memerlukan XAMPP atau database karena seluruh proses dilakukan di sisi client.
+
