@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulasi Kredit Mobil - Modern Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2><i class="fas fa-car floating"></i> Simulasi Kredit Mobil <i class="fas fa-calculator floating"></i></h2>
+
+  <div class="form-group">
+    <label for="otr"><i class="fas fa-tag"></i> 💰 Harga Mobil (OTR)</label>
+    <input type="number" id="otr" value="240000000" placeholder="Masukkan harga mobil" min="0">
+  </div>
+
+  <div class="form-group">
+    <label for="dp"><i class="fas fa-percentage"></i> 💳 DP (%)</label>
+    <input type="number" id="dp" value="20" min="0" max="100" placeholder="Persentase DP">
+  </div>
+
+  <div class="form-group">
+    <label for="jangka"><i class="fas fa-calendar-alt"></i> 📅 Jangka Waktu (bulan)</label>
+    <input type="number" id="jangka" placeholder="Contoh: 12, 24, 36" min="1">
+  </div>
+
+  <button onclick="hitung()">
+    <i class="fas fa-calculator"></i> Hitung Angsuran
+  </button>
+
+  <div class="loading" id="loading">
+    <div class="loading-spinner"></div>
+    <p style="color: white; margin-top: 10px; font-size: 14px;">Menghitung...</p>
+  </div>
+
+  <div id="hasil">Hasil simulasi akan muncul di sini</div>
+
+  <div class="btn-container" id="btnContainer">
+    <button class="btn-print" onclick="cetak()">
+      <i class="fas fa-print"></i> Cetak
+    </button>
+    <button class="btn-download" onclick="download()">
+      <i class="fas fa-download"></i> Download
+    </button>
+  </div>
+
+  <div class="info-box">
+    <h4><i class="fas fa-info-circle"></i> ℹ️ Informasi Bunga:</h4>
+    <p>• <strong>1-12 bulan:</strong> 12% per tahun<br>
+       • <strong>13-24 bulan:</strong> 14% per tahun<br>
+       • <strong>25+ bulan:</strong> 16.5% per tahun</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
