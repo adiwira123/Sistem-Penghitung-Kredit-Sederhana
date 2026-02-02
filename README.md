@@ -1,4 +1,4 @@
-# Simulasi Kredit Mobil
+# Sistem Penghitubf Kredit Sederhana Berbasis Web
 
 Program sederhana untuk menghitung angsuran kredit mobil berdasarkan harga mobil (OTR), down payment (DP), dan jangka waktu kredit.
 
@@ -30,4 +30,5 @@ Perhitungan bunga dan angsuran mengikuti alur **flowchart kredit mobil**.
 
 ## Catatan
 Program ini tidak memerlukan XAMPP atau database karena seluruh proses dilakukan di sisi client.
+
 
